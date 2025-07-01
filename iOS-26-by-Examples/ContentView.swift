@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-enum Destination: String, CaseIterable {
+enum Destination: String, CaseIterable, Identifiable {
     case animatable = "Animatable"
     case backgroundExtensionEffect = "Background Extension Effect View"
     case chart3D = "Chart3D"
@@ -15,16 +15,31 @@ enum Destination: String, CaseIterable {
     case richTextEditor = "Rich text editor"
     case sfSymbols = "SF Symbols"
     case tabView = "Tab View"
+
+    var id: String { self.rawValue }
+
+    var isSheet: Bool {
+        self == .tabView
+    }
 }
 
 struct ContentView: View {
     @State private var searchText = ""
+    @State private var selectedSheetDestination: Destination? = nil
     var body: some View {
         NavigationStack {
             content
                 .navigationTitle("iOS 26")
                 .navigationSubtitle("by Examples")
                 .searchable(text: $searchText, prompt: "Search")
+        }
+        .sheet(item: $selectedSheetDestination) { destination in
+            switch destination {
+            case .tabView:
+                NewTabView()
+            default:
+                EmptyView()
+            }
         }
     }
 
@@ -35,8 +50,23 @@ struct ContentView: View {
         if destinations.isEmpty {
             ContentUnavailableView("No examples", systemImage: "xmark")
         } else {
-            List(destinations, id: \.self) { destination in
-                NavigationLink(destination.rawValue, value: destination)
+            List {
+                ForEach(destinations) { destination in
+                    if destination.isSheet {
+                        Button {
+                            selectedSheetDestination = destination
+                        } label: {
+                            HStack {
+                                Text(destination.rawValue)
+                                    .foregroundStyle(Color(.label))
+                                Spacer()
+                                NavigationLink(destination: EmptyView.init, label: EmptyView.init)
+                            }
+                        }
+                    } else {
+                        NavigationLink(destination.rawValue, value: destination)
+                    }
+                }
             }
             .navigationDestination(for: Destination.self) { destination in
                 switch destination {
