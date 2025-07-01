@@ -2,6 +2,8 @@
 
 A collection of hands-on examples demonstrating new features and APIs introduced in iOS 26, built with SwiftUI. Each example is self-contained and showcases a specific capability or UI enhancement available in the latest iOS release.
 
+<img src=".github/preview.png" alt="Preview" width="50%" />
+
 ## Examples
 
 - **AnimatableView**: Demonstrates custom animatable shapes and interactive animation using SwiftUI's new `@Animatable` macro.
