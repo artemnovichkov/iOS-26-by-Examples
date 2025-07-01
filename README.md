@@ -13,6 +13,7 @@ A collection of hands-on examples demonstrating new features and APIs introduced
 - **[BackgroundExtensionEffectView](iOS-26-by-Examples/Views/BackgroundExtensionEffectView.swift)**: Shows how to use the new `.backgroundExtensionEffect()` modifier for immersive backgrounds.
 - **[Chart3DView](iOS-26-by-Examples/Views/Chart3DView.swift)**: Explores the new 3D charting capabilities with `Chart3D` and `SurfacePlot`.
 - **[GlassEffectContainerView](iOS-26-by-Examples/Views/GlassEffectContainerView.swift)**: Showcases advanced glassmorphism effects and container unions using `GlassEffectContainer` and related APIs.
+- **[GlassEffectView](iOS-26-by-Examples/Views/GlassEffectView.swift)**: Demonstrates the new GlassEffect API for creating translucent, glass-like UI elements.
 - **[LabelSpacingView](iOS-26-by-Examples/Views/LabelSpacingView.swift)**: Demonstrates new label spacing and icon width customization with `.labelIconToTitleSpacing` and `.labelReservedIconWidth`.
 - **[ListSectionIndexLabel](iOS-26-by-Examples/Views/ListSectionIndexLabel.swift)**: Uses `.sectionIndexLabel` and `.listSectionIndexVisibility` for improved list navigation.
 - **[NativeWebView](iOS-26-by-Examples/Views/NativeWebView.swift)**: Integrates a native `WebView` with SwiftUI, loading a web page on appear.

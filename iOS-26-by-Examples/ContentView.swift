@@ -8,7 +8,8 @@ enum Destination: String, CaseIterable, Identifiable {
     case animatable = "Animatable"
     case backgroundExtensionEffect = "Background Extension Effect View"
     case chart3D = "Chart3D"
-    case GlassEffectContainer = "Glass Effect Container"
+    case glassEffectContainer = "Glass Effect Container"
+    case glassEffectView = "Glass Effect View"
     case labelSpacing = "Label Spacing"
     case listIndexLabel = "List Index Label"
     case nativeWebView = "Native web view"
@@ -77,8 +78,10 @@ struct ContentView: View {
                     BackgroundExtensionEffectView()
                 case .chart3D:
                     Chart3DView()
-                case .GlassEffectContainer:
+                case .glassEffectContainer:
                     GlassEffectContainerView()
+                case .glassEffectView:
+                    GlassEffectView()
                 case .labelSpacing:
                     LabelSpacingView()
                 case .listIndexLabel:
