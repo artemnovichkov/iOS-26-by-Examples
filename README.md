@@ -9,16 +9,16 @@ A collection of hands-on examples demonstrating new features and APIs introduced
 
 ## Examples
 
-- **AnimatableView**: Demonstrates custom animatable shapes and interactive animation using SwiftUI's new `@Animatable` macro.
-- **BackgroundExtensionEffectView**: Shows how to use the new `.backgroundExtensionEffect()` modifier for immersive backgrounds.
-- **Chart3DView**: Explores the new 3D charting capabilities with `Chart3D` and `SurfacePlot`.
-- **GlassEffectContainerView**: Showcases advanced glassmorphism effects and container unions using `GlassEffectContainer` and related APIs.
-- **LabelSpacingView**: Demonstrates new label spacing and icon width customization with `.labelIconToTitleSpacing` and `.labelReservedIconWidth`.
-- **ListSectionIndexLabel**: Uses `.sectionIndexLabel` and `.listSectionIndexVisibility` for improved list navigation.
-- **NativeWebView**: Integrates a native `WebView` with SwiftUI, loading a web page on appear.
-- **NewTabView**: Presents the enhanced `TabView` with new tab roles, bottom accessories, and minimize behavior.
-- **RichTextEditor**: Utilizes the improved `TextEditor` for rich text editing with attributed strings.
-- **SFSymbolsView**: Animates and customizes SF Symbols with new symbol effects and variable values.
+- **[AnimatableView](iOS-26-by-Examples/Views/AnimatableView.swift)**: Demonstrates custom animatable shapes and interactive animation using SwiftUI's new `@Animatable` macro.
+- **[BackgroundExtensionEffectView](iOS-26-by-Examples/Views/BackgroundExtensionEffectView.swift)**: Shows how to use the new `.backgroundExtensionEffect()` modifier for immersive backgrounds.
+- **[Chart3DView](iOS-26-by-Examples/Views/Chart3DView.swift)**: Explores the new 3D charting capabilities with `Chart3D` and `SurfacePlot`.
+- **[GlassEffectContainerView](iOS-26-by-Examples/Views/GlassEffectContainerView.swift)**: Showcases advanced glassmorphism effects and container unions using `GlassEffectContainer` and related APIs.
+- **[LabelSpacingView](iOS-26-by-Examples/Views/LabelSpacingView.swift)**: Demonstrates new label spacing and icon width customization with `.labelIconToTitleSpacing` and `.labelReservedIconWidth`.
+- **[ListSectionIndexLabel](iOS-26-by-Examples/Views/ListSectionIndexLabel.swift)**: Uses `.sectionIndexLabel` and `.listSectionIndexVisibility` for improved list navigation.
+- **[NativeWebView](iOS-26-by-Examples/Views/NativeWebView.swift)**: Integrates a native `WebView` with SwiftUI, loading a web page on appear.
+- **[NewTabView](iOS-26-by-Examples/Views/NewTabView.swift)**: Presents the enhanced `TabView` with new tab roles, bottom accessories, and minimize behavior.
+- **[RichTextEditor](iOS-26-by-Examples/Views/RichTextEditor.swift)**: Utilizes the improved `TextEditor` for rich text editing with attributed strings.
+- **[SFSymbolsView](iOS-26-by-Examples/Views/SFSymbolsView.swift)**: Animates and customizes SF Symbols with new symbol effects and variable values.
 
 ## Author
 
