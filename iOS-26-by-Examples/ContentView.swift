@@ -15,6 +15,7 @@ enum Destination: String, CaseIterable, Identifiable {
     case richTextEditor = "Rich text editor"
     case sfSymbols = "SF Symbols"
     case tabView = "Tab View"
+    case toolbarSpacer = "Toolbar Spacer"
 
     var id: String { self.rawValue }
 
@@ -90,6 +91,8 @@ struct ContentView: View {
                     SFSymbolsView()
                 case .tabView:
                     NewTabView()
+                case .toolbarSpacer:
+                    ToolbarSpacerView()
                 }
             }
         }

@@ -19,6 +19,7 @@ A collection of hands-on examples demonstrating new features and APIs introduced
 - **[NewTabView](iOS-26-by-Examples/Views/NewTabView.swift)**: Presents the enhanced `TabView` with new tab roles, bottom accessories, and minimize behavior.
 - **[RichTextEditor](iOS-26-by-Examples/Views/RichTextEditor.swift)**: Utilizes the improved `TextEditor` for rich text editing with attributed strings.
 - **[SFSymbolsView](iOS-26-by-Examples/Views/SFSymbolsView.swift)**: Animates and customizes SF Symbols with new symbol effects and variable values.
+- **[ToolbarSpacerView](iOS-26-by-Examples/Views/ToolbarSpacerView.swift)**: Demonstrates the new toolbar spacer API for flexible and adaptive toolbar layouts.
 
 ## Contributing
 
