@@ -1,5 +1,8 @@
 # iOS 26 by Examples
 
+![Xcode 26+](https://img.shields.io/badge/Xcode-26%2B-blue?logo=xcode&logoColor=white)
+![iOS 26.0+](https://img.shields.io/badge/iOS-26.0%2B-orange?logo=apple&logoColor=white)
+
 A collection of hands-on examples demonstrating new features and APIs introduced in iOS 26, built with SwiftUI. Each example is self-contained and showcases a specific capability or UI enhancement available in the latest iOS release.
 
 <img src=".github/preview.png" alt="Preview" width="50%" />
