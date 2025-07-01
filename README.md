@@ -20,6 +20,10 @@ A collection of hands-on examples demonstrating new features and APIs introduced
 - **[RichTextEditor](iOS-26-by-Examples/Views/RichTextEditor.swift)**: Utilizes the improved `TextEditor` for rich text editing with attributed strings.
 - **[SFSymbolsView](iOS-26-by-Examples/Views/SFSymbolsView.swift)**: Animates and customizes SF Symbols with new symbol effects and variable values.
 
+## Contributing
+
+Contributions are welcome! If you have an example, improvement, or fix to share, feel free to open a pull request or submit an issue. Please ensure your code follows the style of the existing examples.
+
 ## Author
 
 Artem Novichkov, https://www.artemnovichkov.com/
