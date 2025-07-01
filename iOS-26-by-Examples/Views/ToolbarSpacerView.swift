@@ -25,5 +25,5 @@ struct ToolbarSpacerView: View {
 }
 
 #Preview {
-    TopBarSpacerView()
+    ToolbarSpacerView()
 }
