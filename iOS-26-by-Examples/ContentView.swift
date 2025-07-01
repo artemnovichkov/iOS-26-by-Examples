@@ -5,16 +5,16 @@
 import SwiftUI
 
 enum Destination: String, CaseIterable {
-    case nativeWebView = "Native web view"
-    case richTextEditor = "Rich text editor"
-    case chart3D = "Chart3D"
-    case sfSymbols = "SF Symbols"
-    case listIndexLabel = "List Index Label"
     case animatable = "Animatable"
     case backgroundExtensionEffect = "Background Extension Effect View"
-    case labelSpacing = "Label Spacing"
-    case tabView = "Tab View"
+    case chart3D = "Chart3D"
     case GlassEffectContainer = "Glass Effect Container"
+    case labelSpacing = "Label Spacing"
+    case listIndexLabel = "List Index Label"
+    case nativeWebView = "Native web view"
+    case richTextEditor = "Rich text editor"
+    case sfSymbols = "SF Symbols"
+    case tabView = "Tab View"
 }
 
 struct ContentView: View {
@@ -40,26 +40,26 @@ struct ContentView: View {
             }
             .navigationDestination(for: Destination.self) { destination in
                 switch destination {
-                case .nativeWebView:
-                    NativeWebView()
-                case .richTextEditor:
-                    RichTextEditor()
-                case .chart3D:
-                    Chart3DView()
-                case .sfSymbols:
-                    SFSymbolsView()
-                case .listIndexLabel:
-                    ListSectionIndexLabel()
                 case .animatable:
                     AnimatableView()
                 case .backgroundExtensionEffect:
                     BackgroundExtensionEffectView()
-                case .labelSpacing:
-                    LabelSpacingView()
-                case .tabView:
-                    NewTabView()
+                case .chart3D:
+                    Chart3DView()
                 case .GlassEffectContainer:
                     GlassEffectContainerView()
+                case .labelSpacing:
+                    LabelSpacingView()
+                case .listIndexLabel:
+                    ListSectionIndexLabel()
+                case .nativeWebView:
+                    NativeWebView()
+                case .richTextEditor:
+                    RichTextEditor()
+                case .sfSymbols:
+                    SFSymbolsView()
+                case .tabView:
+                    NewTabView()
                 }
             }
         }
