@@ -9,51 +9,51 @@ struct NativeWebView: View {
     @State private var webPage = WebPage()
 
     var body: some View {
-        Group {
-            if webPage.isLoading {
-                ProgressView("Loading...", value: webPage.estimatedProgress)
-                    .padding(.horizontal)
-            } else {
-                WebView(webPage)
-                    .ignoresSafeArea(.container, edges: .bottom)
-                    .webViewContentBackground(.visible)
-            }
-        }
-        .toolbar {
-            ToolbarItemGroup(placement: .bottomBar) {
-                ToolbarBackForwardMenuView(
-                    list: webPage.backForwardList.backList.reversed(),
-                    label: .init(text: "Backward", systemImage: "chevron.backward")
-                ) { item in
-                    webPage.load(item)
-                }
-                ToolbarBackForwardMenuView(
-                    list: webPage.backForwardList.forwardList,
-                    label: .init(text: "Forward", systemImage: "chevron.forward")
-                ) { item in
-                    webPage.load(item)
-                }
-                Spacer()
-                Button(action: {
-                    webPage.reload()
-                }) {
-                    Label("Reload", systemImage: "arrow.clockwise")
-                }
-                if let url = webPage.url {
-                    ShareLink(item: url)
+        WebView(webPage)
+            .ignoresSafeArea(.container, edges: .bottom)
+            .webViewContentBackground(.visible)
+            .safeAreaInset(edge: .top) {
+                if webPage.isLoading {
+                    ProgressView("Loading...", value: webPage.estimatedProgress)
+                        .progressViewStyle(.linear)
+                        .padding(.horizontal)
                 }
             }
-        }
-        .toolbarRole(.browser)
-        .toolbarBackground(.white, for: .navigationBar)
-        .onAppear {
-            let url = URL(string: "https://www.artemnovichkov.com")!
-            webPage.load(URLRequest(url: url))
-        }
-        .onDisappear {
-            webPage.stopLoading()
-        }
-        .navigationTitle(webPage.title)
+            .toolbar {
+                ToolbarItemGroup(placement: .bottomBar) {
+                    ToolbarBackForwardMenuView(
+                        list: webPage.backForwardList.backList.reversed(),
+                        label: .init(text: "Backward", systemImage: "chevron.backward")
+                    ) { item in
+                        webPage.load(item)
+                    }
+                    ToolbarBackForwardMenuView(
+                        list: webPage.backForwardList.forwardList,
+                        label: .init(text: "Forward", systemImage: "chevron.forward")
+                    ) { item in
+                        webPage.load(item)
+                    }
+                    Spacer()
+                    Button(action: {
+                        webPage.reload()
+                    }) {
+                        Label("Reload", systemImage: "arrow.clockwise")
+                    }
+                    if let url = webPage.url {
+                        ShareLink(item: url)
+                    }
+                }
+            }
+            .toolbarRole(.browser)
+            .toolbarBackground(.white, for: .navigationBar)
+            .onAppear {
+                let url = URL(string: "https://www.artemnovichkov.com")!
+                webPage.load(URLRequest(url: url))
+            }
+            .onDisappear {
+                webPage.stopLoading()
+            }
+            .navigationTitle(webPage.title)
     }
 
     @MainActor
