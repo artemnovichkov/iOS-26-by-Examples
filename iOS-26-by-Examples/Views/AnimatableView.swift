@@ -32,19 +32,28 @@ struct AnimatableView: View {
     }
 }
 
-@Animatable
 struct Arc: Shape {
     var startAngle: Angle
     var endAngle: Angle
-    @AnimatableIgnored var clockwise: Bool
+    var clockwise: Bool
+
+    var animatableData: AnimatablePair<Angle.AnimatableData, Angle.AnimatableData> {
+        get { AnimatablePair(startAngle.animatableData, endAngle.animatableData) }
+        set {
+            startAngle.animatableData = newValue.first
+            endAngle.animatableData = newValue.second
+        }
+    }
 
     func path(in rect: CGRect) -> Path {
-        Path {
-            $0.addArc(center: CGPoint(x: rect.midX, y: rect.midY),
-                      radius: rect.width / 2,
-                      startAngle: startAngle,
-                      endAngle: endAngle,
-                      clockwise: clockwise)
+        Path { path in
+            path.addArc(
+                center: CGPoint(x: rect.midX, y: rect.midY),
+                radius: rect.width / 2,
+                startAngle: startAngle,
+                endAngle: endAngle,
+                clockwise: clockwise
+            )
         }
     }
 }
