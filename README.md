@@ -28,7 +28,7 @@ Contributions are welcome! If you have an example, improvement, or fix to share,
 
 ## Author
 
-Artem Novichkov, https://www.artemnovichkov.com/
+Artem Novichkov, https://artemnovichkov.com
 
 ## License
 
