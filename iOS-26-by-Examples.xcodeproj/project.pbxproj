@@ -6,9 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		060418992F01AF8B002B885C /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 060418982F01AF8B002B885C /* AppIcon.icon */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		060418982F01AF8B002B885C /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		0642B4D72E13EAF20047B6E0 /* iOS-26-by-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-26-by-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EDB44F2E154BEC00E19853 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		06F82E272EF6C5B9008151BC /* CLAUDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CLAUDE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,9 +39,11 @@
 		0642B4CE2E13EAF10047B6E0 = {
 			isa = PBXGroup;
 			children = (
+				060418982F01AF8B002B885C /* AppIcon.icon */,
 				0642B4D92E13EAF20047B6E0 /* iOS-26-by-Examples */,
 				0642B4D82E13EAF20047B6E0 /* Products */,
 				06EDB44F2E154BEC00E19853 /* README.md */,
+				06F82E272EF6C5B9008151BC /* CLAUDE.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +119,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				060418992F01AF8B002B885C /* AppIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

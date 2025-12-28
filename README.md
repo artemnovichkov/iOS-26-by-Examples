@@ -1,3 +1,5 @@
+<img src=".github/ios-26-badge-icon.png" alt="Preview" width="50%" />
+
 # iOS 26 by Examples
 
 ![Xcode 26+](https://img.shields.io/badge/Xcode-26%2B-blue?logo=xcode&logoColor=white)
