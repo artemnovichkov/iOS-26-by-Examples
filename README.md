@@ -1,4 +1,4 @@
-<img src=".github/ios-26-badge-icon.png" alt="Preview" width="50%" />
+<img src=".github/ios-26-badge-icon.png" alt="Preview" width="25%" />
 
 # iOS 26 by Examples
 
