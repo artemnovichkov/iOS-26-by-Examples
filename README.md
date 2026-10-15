@@ -32,6 +32,8 @@ Contributions are welcome! If you have an example, improvement, or fix to share,
 
 Artem Novichkov, https://artemnovichkov.com
 
+📬 One essential iOS article a day: [iOS Daily on Telegram](https://t.me/+4eP13zejBz9iZmU6)
+
 ## License
 
 The project is available under the MIT license. See the [LICENSE](./LICENSE) file for more info.
